@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-color: #3a4663;
+  --primary-text: #ffffff;
+  --secondary-text: #434a59;
+  --reset-btn: #647198;
+  --reset-btn-shadow: #414e73;
+  --equal-btn: #d03f2f;
+  --equal-btn-shadow: #93261a;
+  --board-bg: #242d44;
+  --input-bg: #181f33;
+  --number-btn-bg: #eae3dc;
+  --number-color: #434a59;
+  --number-shadow: #b3a497;
+  --number-btn-hover: #fffffe;
+  --reset-btn-hover: #a2b2e1;
+  --equal-btn-hover: #f96b5b;
+}
+
+@layer components {
+  .heading {
+    @apply text-[32px] leading-7 -tracking-[0.53333];
+  }
+  .small-text {
+    @apply text-[12px] leading-3;
+  }
+  .switch {
+    @apply cursor-pointer bg-[var(--board-bg)] p-[5px] h-[26px] w-[71px] rounded-[13px];
+  }
+  .number-btn {
+    @apply hover:bg-[var(--number-btn-hover)] shadow-[inset_0px_-4px_0px_var(--number-shadow)] rounded-[5px] text-[var(--number-color)]  h-[64px] bg-[var(--number-btn-bg)] flex justify-center items-center text-[2rem] leading-[29px] -tracking-[0.53333px];
+  }
+  .reset-btn {
+    @apply hover:bg-[var(--reset-btn-hover)] shadow-[inset_0px_-4px_0px_var(--reset-btn-shadow)] rounded-[5px]  h-[64px] bg-[var(--reset-btn)] flex justify-center items-center text-[20px] leading-[19px] -tracking-[0.3333px];
+  }
+
+  .equal-btn {
+    @apply hover:bg-[var(--equal-btn-hover)] reset-btn bg-[var(--equal-btn)] shadow-[inset_0px_-4px_0px_var(--equal-btn-shadow)];
+  }
+}

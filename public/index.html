@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <title>Calculator</title>
+  </head>
+  <body class="h-full bg-[var(--bg-color)] grid place-items-center">
+    <div
+      class="container sm:max-w-[540px] py-8 px-6 text-[var(--primary-text)]"
+    >
+      <header class="flex justify-between mb-8">
+        <h3 class="heading">calc</h3>
+        <div class="flex items-end gap-6">
+          <span class="small-text">THEME</span>
+          <div>
+            <ul class="flex gap-4 justify-center mb-1">
+              <li class="small-text">1</li>
+              <li class="small-text">2</li>
+              <li class="small-text">3</li>
+            </ul>
+            <div class="switch">
+              <div
+                id="switch-circle"
+                class="h-[1rem] w-[1rem] bg-[var(--equal-btn)] rounded-full"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="mb-6">
+        <input
+          id="input"
+          autocomplete="off"
+          class="py-7 text-[40px] leading-7 text-right px-6 bg-[var(--input-bg)] w-full rounded-[10px]"
+          type="text"
+        />
+      </section>
+
+      <section
+        class="grid grid-cols-4 gap-[13px] bg-[var(--board-bg)] p-6 rounded-[10px]"
+      >
+        <button class="number-btn">7</button>
+        <button class="number-btn">8</button>
+        <button class="number-btn">9</button>
+        <button id="del" class="reset-btn">DEL</button>
+        <button class="number-btn">4</button>
+        <button class="number-btn">5</button>
+        <button class="number-btn">6</button>
+        <button class="number-btn">+</button>
+        <button class="number-btn">1</button>
+        <button class="number-btn">2</button>
+        <button class="number-btn">3</button>
+        <button class="number-btn">-</button>
+        <button class="number-btn">.</button>
+        <button class="number-btn">0</button>
+        <button class="number-btn">/</button>
+        <button class="number-btn">x</button>
+        <button id="reset" class="reset-btn col-span-2">RESET</button>
+        <button id="equal" class="equal-btn col-span-2">=</button>
+      </section>
+    </div>
+
+    <script src="../src/js/app.js" type="module"></script>
+  </body>
+</html>
