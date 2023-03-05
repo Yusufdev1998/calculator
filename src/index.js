@@ -1,4 +1,4 @@
-import Themes, { setTheme } from "./theme.js";
+import Themes, { setTheme } from "./js/theme.js";
 import {
   switchBtn,
   switchCircle,
@@ -7,7 +7,7 @@ import {
   delBtn,
   resetBtn,
   equalBtn,
-} from "./ui.js";
+} from "./js/ui.js";
 
 // global states of the application locates here
 let state = {
